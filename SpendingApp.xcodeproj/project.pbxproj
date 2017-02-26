@@ -30,6 +30,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F7C7C041E6250B000071754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD279881E4646B00036A8B4 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		3F7C7C061E6250B000071754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD279881E4646B00036A8B4 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		3F7C7C081E6250B000071754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD279881E4646B00036A8B4 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
 		E1F6ED421DE8BA510014BBA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1F6ED221DE8BA510014BBA5 /* Project object */;
@@ -113,6 +134,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7C7BFF1E6250B000071754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F7C7C051E6250B000071754 /* Charts.framework */,
+				3F7C7C071E6250B000071754 /* ChartsRealm.framework */,
+				3F7C7C091E6250B000071754 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3FA994201E44CBCA0013E742 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +164,7 @@
 		E1F6ED211DE8BA510014BBA5 = {
 			isa = PBXGroup;
 			children = (
-				E1F6ED2C1DE8BA510014BBA5 /* MoneyTracker */,
+				E1F6ED2C1DE8BA510014BBA5 /* SpendingApp */,
 				E1F6ED2B1DE8BA510014BBA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,20 +179,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1F6ED2C1DE8BA510014BBA5 /* MoneyTracker */ = {
+		E1F6ED2C1DE8BA510014BBA5 /* SpendingApp */ = {
 			isa = PBXGroup;
 			children = (
 				3FD279881E4646B00036A8B4 /* Charts.xcodeproj */,
-				E1F6EDC71DEBC8790014BBA5 /* Models */,
 				E1F6ED2D1DE8BA510014BBA5 /* AppDelegate.swift */,
 				E1F6ED311DE8BA510014BBA5 /* Main.storyboard */,
+				E1F6EDC71DEBC8790014BBA5 /* Models */,
+				3FA994201E44CBCA0013E742 /* ViewControllers */,
 				E1F6ED371DE8BA510014BBA5 /* Assets.xcassets */,
 				E1F6ED391DE8BA510014BBA5 /* LaunchScreen.storyboard */,
 				3FA9941D1E44CB7A0013E742 /* MoneyTracker.xcdatamodeld */,
 				E1F6ED3C1DE8BA510014BBA5 /* Info.plist */,
-				3FA994201E44CBCA0013E742 /* ViewControllers */,
 			);
-			name = MoneyTracker;
 			path = SpendingApp;
 			sourceTree = "<group>";
 		};
@@ -272,6 +302,12 @@
 			mainGroup = E1F6ED211DE8BA510014BBA5;
 			productRefGroup = E1F6ED2B1DE8BA510014BBA5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F7C7BFF1E6250B000071754 /* Products */;
+					ProjectRef = 3FD279881E4646B00036A8B4 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E1F6ED291DE8BA510014BBA5 /* SpendingApp */,
@@ -280,6 +316,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F7C7C051E6250B000071754 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 3F7C7C041E6250B000071754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F7C7C071E6250B000071754 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 3F7C7C061E6250B000071754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F7C7C091E6250B000071754 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 3F7C7C081E6250B000071754 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E1F6ED281DE8BA510014BBA5 /* Resources */ = {
